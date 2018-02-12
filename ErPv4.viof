@@ -8,6 +8,7 @@
   <Subroutine Name="ProgressCheck.viofs" iObjectInstances="1" />
   <Subroutine Name="CalcQElec.viofs" iObjectInstances="1" />
   <Subroutine Name="CalcEfficiency.viofs" iObjectInstances="1" />
+  <Subroutine Name="CalcHHMM.viofs" iObjectInstances="1" />
   <Connections>
     <Connection sKey="vFactoryPage" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
     <Connection sKey="PressureV" iPort="0" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="input" />
@@ -522,7 +523,7 @@
       <eKeySource sAddress="1" sIndex="" dtAddress="UI8" />
       <eKeySource sAddress="6" sIndex="" dtAddress="UI8" />
       <eKeySource sAddress="59" sIndex="" dtAddress="UI8" />
-      <eKeySource sAddress="50" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="58" sIndex="" dtAddress="UI8" />
       <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="Day" sIndex="" dtAddress="UI8" />
@@ -1227,17 +1228,14 @@
       <eAddress1 sAddress="RunPause" sIndex="" dtAddress="Bit" />
     </NO>
     <wireRouter rung="0" row="326" column="23" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilCalc rung="0" row="599" column="9" cellsHeigh="3" iSortedIndex="76">
-      <eStoreIn sAddress="hhmm" sIndex="" dtAddress="Float" />
-      <Equation>
-        <mathElement sAddress="TapTime" sIndex="" dtAddress="I32" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="60.0" sIndex="" dtAddress="Float" />
-      </Equation>
-    </coilCalc>
+    <coilSubroutine rung="0" row="600" column="9" cellsHeigh="3" iSortedIndex="76" SubroutineName="CalcHHMM.viofs" bIsEmbeddedSub="false">
+      <eLocal sAddress="TapTime" sIndex="" dtAddress="I32" />
+      <eSub sAddress="Minutes" sIndex="" dtAddress="I32" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="hhmm" sIndex="" dtAddress="Float" />
+      <eSub sAddress="HHMM" sIndex="" dtAddress="Float" />
+      <bPassByRefOrFromEmbedded value="True" />
+    </coilSubroutine>
   </Cells>
   <FlowConnections>
     <FlowConn From="0" Yes="28" dirYesFrom="down" dirYesTo="up" />

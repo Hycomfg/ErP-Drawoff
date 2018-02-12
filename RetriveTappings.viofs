@@ -38,7 +38,7 @@
     </Equal>
     <coilCopy rung="0" row="5" column="2" cellsHeigh="3" iSortedIndex="0" CopyType="standard">
       <eKeySource sAddress="9999" sIndex="" dtAddress="I32" />
-      <eKeySource sAddress="3" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="1.1" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="TapTime" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="VolProf" sIndex="" dtAddress="Float" />
     </coilCopy>
