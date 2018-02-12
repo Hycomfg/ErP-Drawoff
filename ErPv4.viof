@@ -149,7 +149,7 @@
     <Connection sKey="x" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="UseProfile" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
     <Connection sKey="Week" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI8" dataSource="register" />
-    <Connection sKey="DoneTapping" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="DoneTapping" iModbusStart="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="QH2O" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="VFullDrawing" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRef" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
@@ -158,6 +158,7 @@
     <Connection sKey="SCF" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="CC" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="EtaWH" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="RunPause" iModbusStart="50" iModbusEnd="50" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="0" />
@@ -332,13 +333,15 @@
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilCopy rung="0" row="5" column="2" cellsHeigh="3" iSortedIndex="0" CopyType="standard">
+    <coilCopy rung="0" row="5" column="2" cellsHeigh="5" iSortedIndex="0" CopyType="standard">
       <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="20" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="40" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="Profile" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Resistance" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="Cact" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="RunPause" sIndex="" dtAddress="UI16" />
     </coilCopy>
     <Equal rung="0" row="558" column="4" cellsHeigh="-1" iSortedIndex="70">
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
@@ -1129,7 +1132,6 @@
       <eSub sAddress="NextStep" sIndex="" dtAddress="UI16" />
       <bPassByRefOrFromEmbedded value="False" />
     </coilSubroutine>
-    <wireRouter rung="0" row="327" column="23" cellsHeigh="-1" iSortedIndex="-1" />
     <coilSubroutine rung="0" row="330" column="6" cellsHeigh="5" iSortedIndex="57" SubroutineName="ProgressCheck.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="SmartOn" sIndex="" dtAddress="Bit" />
       <eSub sAddress="Smart" sIndex="" dtAddress="Bit" />
@@ -1221,13 +1223,18 @@
     <NC rung="0" row="858" column="10" cellsHeigh="-1" iSortedIndex="-1">
       <eAddress1 sAddress="SmartOn" sIndex="" dtAddress="Bit" />
     </NC>
+    <Equal rung="0" row="326" column="9" cellsHeigh="-1" iSortedIndex="-1">
+      <eAddress1 sAddress="RunPause" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <wireRouter rung="0" row="327" column="23" cellsHeigh="-1" iSortedIndex="-1" />
   </Cells>
   <FlowConnections>
     <FlowConn From="0" Yes="28" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="1" Yes="36" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="2" Yes="1" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="3" Yes="4" dirYesFrom="up" dirYesTo="down" />
-    <FlowConn From="4" Yes="123" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="4" Yes="132" dirYesFrom="up" dirYesTo="down" />
     <FlowConn From="5" Yes="12" dirYesFrom="right" dirYesTo="left" No="15" dirNoFrom="down" dirNoTo="up" />
     <FlowConn From="6" Yes="7" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="7" Yes="8" dirYesFrom="down" dirYesTo="up" />
@@ -1261,7 +1268,7 @@
     <FlowConn From="37" Yes="51" dirYesFrom="right" dirYesTo="up" />
     <FlowConn From="38" Yes="37" dirYesFrom="right" dirYesTo="left" No="47" dirNoFrom="down" dirNoTo="up" />
     <FlowConn From="39" Yes="43" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="40" Yes="125" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="40" Yes="124" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="41" Yes="40" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="42" Yes="38" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="43" Yes="97" dirYesFrom="down" dirYesTo="up" />
@@ -1339,14 +1346,15 @@
     <FlowConn From="120" Yes="68" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="121" Yes="120" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="122" Yes="118" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="123" Yes="124" dirYesFrom="left" dirYesTo="up" />
-    <FlowConn From="124" Yes="38" dirYesFrom="left" dirYesTo="up" />
-    <FlowConn From="125" Yes="127" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="123" Yes="38" dirYesFrom="left" dirYesTo="up" />
+    <FlowConn From="124" Yes="126" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="126" Yes="127" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="127" Yes="128" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="128" Yes="129" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="129" Yes="131" dirYesFrom="down" dirYesTo="up" No="88" dirNoFrom="right" dirNoTo="down" />
-    <FlowConn From="130" Yes="88" dirYesFrom="right" dirYesTo="down" />
-    <FlowConn From="131" Yes="130" dirYesFrom="down" dirYesTo="up" No="130" dirNoFrom="left" dirNoTo="left" />
+    <FlowConn From="128" Yes="130" dirYesFrom="down" dirYesTo="up" No="88" dirNoFrom="right" dirNoTo="down" />
+    <FlowConn From="129" Yes="88" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="130" Yes="129" dirYesFrom="down" dirYesTo="up" No="129" dirNoFrom="left" dirNoTo="left" />
+    <FlowConn From="131" Yes="123" dirYesFrom="down" dirYesTo="up" No="131" dirNoFrom="left" dirNoTo="up" />
+    <FlowConn From="132" Yes="131" dirYesFrom="left" dirYesTo="up" />
   </FlowConnections>
   <Wires />
   <Comments />
