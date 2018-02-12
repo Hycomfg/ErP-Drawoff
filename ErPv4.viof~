@@ -63,7 +63,7 @@
     <Connection sKey="SetPoint" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="Hysteresis" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="MaxTemp" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="Current" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="Current" iModbusStart="71" iModbusEnd="72" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="Pressure" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="Heating" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="ThermostatOff" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
@@ -116,7 +116,7 @@
     <Connection sKey="LastTapTime" iModbusStart="38" iModbusEnd="39" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="LastQTap" iModbusStart="40" iModbusEnd="41" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="LastVolProf" iModbusStart="64" iModbusEnd="65" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="TotalVtap" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="TotalVtap" iModbusStart="69" iModbusEnd="70" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="TotalQtap" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="Resistance" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="kW" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
@@ -152,7 +152,7 @@
     <Connection sKey="Week" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI8" dataSource="register" />
     <Connection sKey="DoneTapping" iModbusStart="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="QH2O" iModbusStart="52" iModbusEnd="53" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="VFullDrawing" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="VFullDrawing" iModbusStart="67" iModbusEnd="68" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRef" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRefTSum" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRefSum" iModbusStart="50" iModbusEnd="51" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
