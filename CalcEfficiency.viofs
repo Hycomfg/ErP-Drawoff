@@ -5,7 +5,7 @@
   <Setup ProjectType="FlowChart" />
   <Connections>
     <Connection sKey="Smart" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
-    <Connection sKey="SCF" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="SCF" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="CC" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QElec" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QCorr" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
@@ -14,7 +14,7 @@
     <Connection sKey="Qcor" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="SmartTerm" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRef" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="EtaWH" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="EtaWH" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="3">

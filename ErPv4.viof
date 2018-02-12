@@ -1180,7 +1180,7 @@
       <bPassByRefOrFromEmbedded value="False" />
       <eLocal sAddress="SCF" sIndex="" dtAddress="Float" />
       <eSub sAddress="SCF" sIndex="" dtAddress="Float" />
-      <bPassByRefOrFromEmbedded value="False" />
+      <bPassByRefOrFromEmbedded value="True" />
       <eLocal sAddress="CC" sIndex="" dtAddress="Float" />
       <eSub sAddress="CC" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1190,12 +1190,12 @@
       <eLocal sAddress="Profile" sIndex="" dtAddress="UI16" />
       <eSub sAddress="Profile" sIndex="" dtAddress="UI16" />
       <bPassByRefOrFromEmbedded value="False" />
-      <eLocal sAddress="QRef" sIndex="" dtAddress="Float" />
+      <eLocal sAddress="QRefSum" sIndex="" dtAddress="Float" />
       <eSub sAddress="QRef" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="False" />
       <eLocal sAddress="EtaWH" sIndex="" dtAddress="Float" />
       <eSub sAddress="EtaWH" sIndex="" dtAddress="Float" />
-      <bPassByRefOrFromEmbedded value="False" />
+      <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
     <NO rung="0" row="861" column="10" cellsHeigh="-1" iSortedIndex="113">
       <eAddress1 sAddress="DoneTapping" sIndex="" dtAddress="Bit" />
