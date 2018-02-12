@@ -156,14 +156,15 @@
     <Connection sKey="QRef" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRefTSum" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="QRefSum" iModbusStart="50" iModbusEnd="51" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="SCF" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="SCF" iModbusStart="73" iModbusEnd="74" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="CC" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="EtaWH" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="EtaWH" iModbusStart="75" iModbusEnd="76" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="RunPause" iModbusStart="6" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
     <Connection sKey="Lasthhmm" iModbusStart="58" iModbusEnd="59" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="LastTp" iModbusStart="60" iModbusEnd="61" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="LastFlow" iModbusStart="62" iModbusEnd="63" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="LastNextTap" iModbusStart="66" iModbusEnd="66" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="ElementOnHours" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="0" />
@@ -1040,6 +1041,7 @@
       <eKeySource sAddress="0.0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="2.5" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0.0" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="0.0" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="x" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="Version" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="VolumeOrEnergy" sIndex="" dtAddress="Bit" />
@@ -1052,6 +1054,7 @@
       <eKeyDestination sAddress="SCF" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="CC" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="EtaWH" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="ElementOnHours" sIndex="" dtAddress="Float" />
     </coilCopy>
     <coilSubroutine rung="0" row="591" column="9" cellsHeigh="7" iSortedIndex="75" SubroutineName="RetriveTappings.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="Profile" sIndex="" dtAddress="UI16" />
