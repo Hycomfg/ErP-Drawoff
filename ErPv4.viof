@@ -1017,101 +1017,6 @@
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="6" sIndex="" dtAddress="UI8" />
     </Equal>
-    <coilCalc rung="0" row="858" column="10" cellsHeigh="3" iSortedIndex="87">
-      <eStoreIn sAddress="DomeCorr" sIndex="" dtAddress="Float" />
-      <Equation>
-        <mathElement sAddress="1.163" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="Cact" sIndex="" dtAddress="Float" />
-        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="DomeStart" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="DomeFinish" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
-      </Equation>
-    </coilCalc>
-    <coilCalc rung="0" row="862" column="10" cellsHeigh="3" iSortedIndex="88">
-      <eStoreIn sAddress="Qelec" sIndex="" dtAddress="Float" />
-      <Equation>
-        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="TotalQtap" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="TotalQH2O" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="Qtestelec" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="DomeCorr" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
-      </Equation>
-    </coilCalc>
-    <coilCalc rung="0" row="866" column="10" cellsHeigh="3" iSortedIndex="89">
-      <eStoreIn sAddress="Qcorr" sIndex="" dtAddress="Float" />
-      <Equation>
-        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="0.23" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="2.5" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="Qelec" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="Qref" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-      </Equation>
-    </coilCalc>
-    <coilCalc rung="0" row="870" column="10" cellsHeigh="3" iSortedIndex="90">
-      <eStoreIn sAddress="Efficiency" sIndex="" dtAddress="Float" />
-      <Equation>
-        <mathElement sAddress="Qref" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="2.5" sIndex="" dtAddress="Float" />
-        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="Qelec" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="Qcorr" sIndex="" dtAddress="Float" />
-        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
-      </Equation>
-    </coilCalc>
-    <NO rung="0" row="858" column="5" cellsHeigh="-1" iSortedIndex="82">
-      <eAddress1 sAddress="SmartOn" sIndex="" dtAddress="Bit" />
-    </NO>
-    <coilCopy rung="0" row="874" column="11" cellsHeigh="3" iSortedIndex="91" CopyType="standard">
-      <eKeySource sAddress="6" sIndex="" dtAddress="UI16" />
-      <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
-    </coilCopy>
     <flowComment rung="0" row="554" column="26" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="">
       <bDown value="False" />
       <bLeft value="False" />
@@ -1283,13 +1188,46 @@
       <eSub sAddress="Qelec" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
+    <coilSubroutine rung="0" row="847" column="8" cellsHeigh="5" iSortedIndex="-1" SubroutineName="CalcEfficiency.viofs" bIsEmbeddedSub="false">
+      <eLocal sAddress="SmartOn" sIndex="" dtAddress="Bit" />
+      <eSub sAddress="Smart" sIndex="" dtAddress="Bit" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="SCF" sIndex="" dtAddress="Float" />
+      <eSub sAddress="SCF" sIndex="" dtAddress="Float" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="CC" sIndex="" dtAddress="Float" />
+      <eSub sAddress="CC" sIndex="" dtAddress="Float" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="Qelec" sIndex="" dtAddress="Float" />
+      <eSub sAddress="QElec" sIndex="" dtAddress="Float" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="Profile" sIndex="" dtAddress="UI16" />
+      <eSub sAddress="Profile" sIndex="" dtAddress="UI16" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="QRef" sIndex="" dtAddress="Float" />
+      <eSub sAddress="QRef" sIndex="" dtAddress="Float" />
+      <bPassByRefOrFromEmbedded value="False" />
+      <eLocal sAddress="EtaWH" sIndex="" dtAddress="Float" />
+      <eSub sAddress="EtaWH" sIndex="" dtAddress="Float" />
+      <bPassByRefOrFromEmbedded value="False" />
+    </coilSubroutine>
+    <NO rung="0" row="854" column="10" cellsHeigh="-1" iSortedIndex="-1">
+      <eAddress1 sAddress="DoneTapping" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="862" column="9" cellsHeigh="3" iSortedIndex="91" CopyType="standard">
+      <eKeySource sAddress="6" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <NC rung="0" row="858" column="10" cellsHeigh="-1" iSortedIndex="-1">
+      <eAddress1 sAddress="SmartOn" sIndex="" dtAddress="Bit" />
+    </NC>
   </Cells>
   <FlowConnections>
     <FlowConn From="0" Yes="28" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="1" Yes="36" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="2" Yes="1" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="3" Yes="4" dirYesFrom="up" dirYesTo="down" />
-    <FlowConn From="4" Yes="129" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="4" Yes="123" dirYesFrom="up" dirYesTo="down" />
     <FlowConn From="5" Yes="12" dirYesFrom="right" dirYesTo="left" No="15" dirNoFrom="down" dirNoTo="up" />
     <FlowConn From="6" Yes="7" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="7" Yes="8" dirYesFrom="down" dirYesTo="up" />
@@ -1313,8 +1251,8 @@
     <FlowConn From="25" Yes="35" dirYesFrom="right" dirYesTo="down" />
     <FlowConn From="26" Yes="27" dirYesFrom="right" dirYesTo="up" />
     <FlowConn From="27" Yes="44" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="28" Yes="125" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="29" Yes="128" dirYesFrom="down" dirYesTo="up" No="110" dirNoFrom="left" dirNoTo="up" />
+    <FlowConn From="28" Yes="119" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="29" Yes="122" dirYesFrom="down" dirYesTo="up" No="110" dirNoFrom="left" dirNoTo="up" />
     <FlowConn From="30" Yes="52" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="33" Yes="35" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="34" Yes="33" dirYesFrom="right" dirYesTo="left" No="14" dirNoFrom="down" dirNoTo="left" />
@@ -1323,7 +1261,7 @@
     <FlowConn From="37" Yes="51" dirYesFrom="right" dirYesTo="up" />
     <FlowConn From="38" Yes="37" dirYesFrom="right" dirYesTo="left" No="47" dirNoFrom="down" dirNoTo="up" />
     <FlowConn From="39" Yes="43" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="40" Yes="131" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="40" Yes="125" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="41" Yes="40" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="42" Yes="38" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="43" Yes="97" dirYesFrom="down" dirYesTo="up" />
@@ -1390,26 +1328,25 @@
     <FlowConn From="106" Yes="75" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="107" Yes="108" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="108" Yes="86" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="110" Yes="121" dirYesFrom="right" dirYesTo="up" No="116" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="110" No="116" dirNoFrom="down" dirNoTo="up" />
     <FlowConn From="112" Yes="47" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="113" Yes="114" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="114" Yes="112" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="115" Yes="113" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="116" Yes="116" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="117" Yes="118" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="118" Yes="119" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="119" Yes="120" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="120" Yes="122" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="121" Yes="116" dirYesFrom="down" dirYesTo="up" No="117" dirNoFrom="right" dirNoTo="left" />
-    <FlowConn From="122" Yes="88" dirYesFrom="right" dirYesTo="down" />
-    <FlowConn From="124" Yes="127" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="125" Yes="39" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="126" Yes="68" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="127" Yes="126" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="128" Yes="124" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="129" Yes="130" dirYesFrom="left" dirYesTo="up" />
-    <FlowConn From="130" Yes="38" dirYesFrom="left" dirYesTo="up" />
-    <FlowConn From="131" Yes="133" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="118" Yes="121" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="119" Yes="39" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="120" Yes="68" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="121" Yes="120" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="122" Yes="118" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="123" Yes="124" dirYesFrom="left" dirYesTo="up" />
+    <FlowConn From="124" Yes="38" dirYesFrom="left" dirYesTo="up" />
+    <FlowConn From="125" Yes="127" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="127" Yes="128" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="128" Yes="129" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="129" Yes="131" dirYesFrom="down" dirYesTo="up" No="88" dirNoFrom="right" dirNoTo="down" />
+    <FlowConn From="130" Yes="88" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="131" Yes="130" dirYesFrom="down" dirYesTo="up" No="130" dirNoFrom="left" dirNoTo="left" />
   </FlowConnections>
   <Wires />
   <Comments />
