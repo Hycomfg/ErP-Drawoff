@@ -160,6 +160,7 @@
     <Connection sKey="CC" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="EtaWH" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="RunPause" iModbusStart="6" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="Lasthhmm" iModbusStart="58" iModbusEnd="59" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="0" />
@@ -412,10 +413,12 @@
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="QrefBad" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="QrefGood" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="TapVol" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="TapTempVol" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="QH2O" sIndex="" dtAddress="Float" />
     </coilCopy>
     <coilCopy rung="0" row="823" column="8" cellsHeigh="7" iSortedIndex="107" CopyType="standard">
       <eKeySource sAddress="QH2OTap" sIndex="" dtAddress="Float" />
@@ -430,6 +433,7 @@
       <eKeySource sAddress="TapTime" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="QTap" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="VolProf" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="hhmm" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="LastQH2O" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="LastQref" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="LastQrefBad" sIndex="" dtAddress="Float" />
@@ -442,6 +446,7 @@
       <eKeyDestination sAddress="LastTapTime" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="LastQTap" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="LastVolProf" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="Lasthhmm" sIndex="" dtAddress="Float" />
     </coilCopy>
     <coilCopy rung="0" row="323" column="2" cellsHeigh="3" iSortedIndex="21" CopyType="standard">
       <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
