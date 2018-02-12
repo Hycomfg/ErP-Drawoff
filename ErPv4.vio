@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--Velocio.net-->
 <!--vBuilder Project 1.0-->
-<Tree Default="Flow Chart" iProgramCheckSum="864020">
+<Tree Default="Flow Chart" iProgramCheckSum="0">
   <leaf index="0" CANDataRate="rate1MBaud" Type="Ace 3090" bEEPROM_CPU="True" sESub="ErPv4.viof">
     <serialData alPortsIndex="1" mySerialType="modbus" sSubPort="A2" myBaudRate="rate9600" myParity="None" bRS232or485="False" myRSType="RS232" iStopBits="1" sReceiveDataTagKey="" sSendDataTagKey="" />
     <setupThermData alPortsIndex="6" sSignal="F1" iPinNumber="1" byPortNum="5" myThermType="K" />
@@ -27,6 +27,7 @@
       <PointerData iPtrIndex="5" iPtrsAllocated="1" mytype="coilCounter" myElement.sAddress="ColdPulses" />
       <PointerData iPtrIndex="6" iPtrsAllocated="1" mytype="coilCounter" myElement.sAddress="RunColdPulses" />
       <PointerData iPtrIndex="7" iPtrsAllocated="1" mytype="coilCounter" myElement.sAddress="TapSecondPulses" />
+      <PointerData iPtrIndex="8" iPtrsAllocated="1" mytype="coilCounter" myElement.sAddress="v40Pulses" />
       <connectionProgramDetails Key="vFactoryPage" TagNumber="34" index="0" mask="65535" />
       <connectionProgramDetails Key="PressureV" TagNumber="3" index="0" mask="65535" />
       <connectionProgramDetails Key="InI16A2" TagNumber="4" index="1" mask="65535" />
@@ -372,6 +373,9 @@
       <connectionProgramDetails Key="VE_TempI32_5" TagNumber="312" index="5" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="311" index="5" mask="65535" />
       <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="310" index="5" mask="65535" />
+    </SWTK>
+    <SWTK iDebugRunningObject="-1" iIndexOfFirstChar="0" iIndexOfFirstFloat="0" iIndexOfFirstPassByRef="0" iIndexOfFirstS16="0" iIndexOfFirstS32="0" iIndexOfFirstU16="0" iNumOf16BitWordsOfStackSpaceUsed="0" iObjectInstances="1" iSubDataBase="0" iUsedBits="0" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="0" iUsedS16="0" iUsedS32="0" iUsedU16="0">
+      <linkedSub iCallStackCount="0" iCallStackCurrent="0" iCallStackFirst="0" iRungFirstIndex="0" iRungLastIndex="0" iSubNumber="0" iTagCount="0" iTagFirstIndex="0" />
     </SWTK>
   </leaf>
 </Tree>
