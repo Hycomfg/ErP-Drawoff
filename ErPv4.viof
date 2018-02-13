@@ -1459,7 +1459,7 @@
     </coilTimer>
     <Greater rung="0" row="951" column="12" cellsHeigh="-1" iSortedIndex="139">
       <eAddress1 sAddress="V40exp" sIndex="" dtAddress="Float" />
-      <eAddress2 sAddress="10" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
     </Greater>
     <coilCopy rung="0" row="895" column="2" cellsHeigh="3" iSortedIndex="126" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
