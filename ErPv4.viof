@@ -167,56 +167,40 @@
     <Connection sKey="LastNextTap" iModbusStart="66" iModbusEnd="66" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
     <Connection sKey="ElementOnHours" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="V40Running" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
-    <Connection sKey="Tset" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="V40exp" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="Tset" iModbusStart="89" iModbusEnd="90" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="V40exp" iModbusStart="81" iModbusEnd="82" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="ThetaCV" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="ThetaCVT" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="ThetaPDashV" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="ThetaPDashVT" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="v40Pulses" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
     <Connection sKey="V40SecVol" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="VE_TempI32_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
-    <Connection sKey="VE_TempFloat_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
-    <Connection sKey="VE_TempUI16_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
-    <Connection sKey="VE_TempI32_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
-    <Connection sKey="VE_TempFloat_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
-    <Connection sKey="VE_TempUI16_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
-    <Connection sKey="VE_TempI32_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
-    <Connection sKey="VE_TempFloat_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
-    <Connection sKey="VE_TempUI16_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
-    <Connection sKey="VE_TempI32_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
-    <Connection sKey="VE_TempFloat_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
-    <Connection sKey="VE_TempUI16_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
-    <Connection sKey="VE_TempI32_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
-    <Connection sKey="VE_TempFloat_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
-    <Connection sKey="VE_TempUI16_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
-    <Connection sKey="VE_TempI32_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
-    <Connection sKey="VE_TempFloat_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
-    <Connection sKey="VE_TempUI16_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
-    <Connection sKey="V40" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="ThetaC" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="ThetaP" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
-    <Connection sKey="ThetaPDash" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="V40" iModbusStart="79" iModbusEnd="80" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="ThetaC" iModbusStart="83" iModbusEnd="84" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="ThetaP" iModbusStart="85" iModbusEnd="86" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="ThetaPDash" iModbusStart="87" iModbusEnd="88" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="V40SecTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="V40WaitTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="0" />
   <Cells>
     <start rung="0" row="1" column="1" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilTimer rung="0" row="271" column="7" cellsHeigh="3" iSortedIndex="8" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="271" column="7" cellsHeigh="3" iSortedIndex="11" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="FullTimer" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <coilCounter rung="0" row="271" column="2" cellsHeigh="-1" iSortedIndex="7" direction="Up">
+    <coilCounter rung="0" row="271" column="2" cellsHeigh="-1" iSortedIndex="10" direction="Up">
       <eCounter sAddress="OutletPulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
     <wireRouter rung="0" row="475" column="20" cellsHeigh="-1" iSortedIndex="-1" />
     <wireRouter rung="0" row="448" column="20" cellsHeigh="-1" iSortedIndex="-1" />
-    <Equal rung="0" row="505" column="4" cellsHeigh="-1" iSortedIndex="53">
+    <Equal rung="0" row="505" column="4" cellsHeigh="-1" iSortedIndex="56">
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
-    <coilCalc rung="0" row="404" column="3" cellsHeigh="3" iSortedIndex="35">
+    <coilCalc rung="0" row="404" column="3" cellsHeigh="3" iSortedIndex="38">
       <eStoreIn sAddress="StageVolume" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
@@ -229,7 +213,7 @@
         <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="408" column="3" cellsHeigh="3" iSortedIndex="36">
+    <coilCalc rung="0" row="408" column="3" cellsHeigh="3" iSortedIndex="39">
       <eStoreIn sAddress="MaxTemp" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="SetPoint" sIndex="" dtAddress="Float" />
@@ -241,7 +225,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="412" column="3" cellsHeigh="3" iSortedIndex="37">
+    <coilCalc rung="0" row="412" column="3" cellsHeigh="3" iSortedIndex="40">
       <eStoreIn sAddress="Current" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="CurrentV" sIndex="" dtAddress="Float" />
@@ -255,7 +239,7 @@
         <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCopy rung="0" row="321" column="2" cellsHeigh="5" iSortedIndex="20" CopyType="standard">
+    <coilCopy rung="0" row="321" column="2" cellsHeigh="5" iSortedIndex="23" CopyType="standard">
       <eKeySource sAddress="2" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
@@ -269,18 +253,18 @@
       <eKeyDestination sAddress="Hysteresis" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="InletSol" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <coilSet rung="0" row="505" column="17" cellsHeigh="-1" iSortedIndex="56">
+    <coilSet rung="0" row="505" column="17" cellsHeigh="-1" iSortedIndex="59">
       <eAddress1 sAddress="InletSol" sIndex="" dtAddress="Bit" />
     </coilSet>
-    <LessEqual rung="0" row="505" column="13" cellsHeigh="-1" iSortedIndex="55">
+    <LessEqual rung="0" row="505" column="13" cellsHeigh="-1" iSortedIndex="58">
       <eAddress1 sAddress="VolCold" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </LessEqual>
-    <Equal rung="0" row="505" column="8" cellsHeigh="-1" iSortedIndex="54">
+    <Equal rung="0" row="505" column="8" cellsHeigh="-1" iSortedIndex="57">
       <eAddress1 sAddress="SubStep" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
-    <coilCopy rung="0" row="509" column="15" cellsHeigh="5" iSortedIndex="64" CopyType="standard">
+    <coilCopy rung="0" row="509" column="15" cellsHeigh="5" iSortedIndex="67" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="2" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
@@ -290,7 +274,7 @@
       <eKeyDestination sAddress="StageVolume" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="ColdWater" sIndex="" dtAddress="Float" />
     </coilCopy>
-    <coilCopy rung="0" row="518" column="12" cellsHeigh="5" iSortedIndex="70" CopyType="standard">
+    <coilCopy rung="0" row="518" column="12" cellsHeigh="5" iSortedIndex="74" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
@@ -302,30 +286,30 @@
       <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Step2TMR" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <Equal rung="0" row="525" column="4" cellsHeigh="-1" iSortedIndex="60">
+    <Equal rung="0" row="525" column="4" cellsHeigh="-1" iSortedIndex="63">
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
     </Equal>
-    <Greater rung="0" row="416" column="5" cellsHeigh="-1" iSortedIndex="38">
+    <Greater rung="0" row="416" column="5" cellsHeigh="-1" iSortedIndex="41">
       <eAddress1 sAddress="Current" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Greater>
-    <coilCopy rung="0" row="416" column="10" cellsHeigh="3" iSortedIndex="39" CopyType="standard">
+    <coilCopy rung="0" row="416" column="10" cellsHeigh="3" iSortedIndex="42" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="Heating" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <coilCopy rung="0" row="420" column="10" cellsHeigh="3" iSortedIndex="59" CopyType="standard">
+    <coilCopy rung="0" row="420" column="10" cellsHeigh="3" iSortedIndex="62" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="Heating" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="Current" sIndex="" dtAddress="Float" />
     </coilCopy>
     <wireRouter rung="0" row="424" column="16" cellsHeigh="-1" iSortedIndex="-1" />
-    <Equal rung="0" row="529" column="8" cellsHeigh="-1" iSortedIndex="61">
+    <Equal rung="0" row="529" column="8" cellsHeigh="-1" iSortedIndex="64">
       <eAddress1 sAddress="ThermostatOff" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="0" sIndex="" dtAddress="UI8" />
     </Equal>
-    <coilCopy rung="0" row="534" column="7" cellsHeigh="3" iSortedIndex="69" CopyType="standard">
+    <coilCopy rung="0" row="534" column="7" cellsHeigh="3" iSortedIndex="73" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
@@ -333,19 +317,19 @@
       <eKeyDestination sAddress="Step3TMR" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
     </coilCopy>
-    <Equal rung="0" row="540" column="4" cellsHeigh="-1" iSortedIndex="65">
+    <Equal rung="0" row="540" column="4" cellsHeigh="-1" iSortedIndex="69">
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="3" sIndex="" dtAddress="UI8" />
     </Equal>
-    <Equal rung="0" row="548" column="8" cellsHeigh="-1" iSortedIndex="67">
+    <Equal rung="0" row="548" column="8" cellsHeigh="-1" iSortedIndex="71">
       <eAddress1 sAddress="ThermostatOff" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
-    <TimerCompare rung="0" row="543" column="8" cellsHeigh="-1" iSortedIndex="66" timerCompareType="GreaterOrEqual" timeUnit="sec">
+    <TimerCompare rung="0" row="543" column="8" cellsHeigh="-1" iSortedIndex="70" timerCompareType="GreaterOrEqual" timeUnit="sec">
       <eKeyTimerValue sAddress="Step3TMR" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="12" sIndex="" dtAddress="UI8" />
     </TimerCompare>
-    <coilCopy rung="0" row="553" column="8" cellsHeigh="5" iSortedIndex="68" CopyType="standard">
+    <coilCopy rung="0" row="553" column="8" cellsHeigh="5" iSortedIndex="72" CopyType="standard">
       <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
@@ -363,10 +347,10 @@
       <eKeyDestination sAddress="SubStep" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Qtestelec" sIndex="" dtAddress="Float" />
     </coilCopy>
-    <coilTimer rung="0" row="303" column="3" cellsHeigh="3" iSortedIndex="15" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="303" column="3" cellsHeigh="3" iSortedIndex="18" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="Seconds" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <coilCounter rung="0" row="304" column="8" cellsHeigh="-1" iSortedIndex="16" direction="Up">
+    <coilCounter rung="0" row="304" column="8" cellsHeigh="-1" iSortedIndex="19" direction="Up">
       <eCounter sAddress="StagePulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
@@ -381,11 +365,11 @@
       <eKeyDestination sAddress="Cact" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="RunPause" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <Equal rung="0" row="562" column="4" cellsHeigh="-1" iSortedIndex="71">
+    <Equal rung="0" row="562" column="4" cellsHeigh="-1" iSortedIndex="75">
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="4" sIndex="" dtAddress="UI8" />
     </Equal>
-    <coilTimer rung="0" row="289" column="2" cellsHeigh="3" iSortedIndex="12" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="289" column="2" cellsHeigh="3" iSortedIndex="15" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="QrefTMR" sIndex="" dtAddress="I32" />
     </coilTimer>
     <flowComment rung="0" row="573" column="27" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Time for draw off ?">
@@ -408,19 +392,19 @@
       <bRightUp value="False" />
       <bUp value="False" />
     </flowComment>
-    <coilCopy rung="0" row="514" column="12" cellsHeigh="3" iSortedIndex="63" CopyType="standard">
+    <coilCopy rung="0" row="514" column="12" cellsHeigh="3" iSortedIndex="66" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="OutletSol" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <LessEqual rung="0" row="514" column="8" cellsHeigh="-1" iSortedIndex="62">
+    <LessEqual rung="0" row="514" column="8" cellsHeigh="-1" iSortedIndex="65">
       <eAddress1 sAddress="StageVolume" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
     </LessEqual>
     <wireRouter rung="0" row="515" column="23" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilTimer rung="0" row="277" column="2" cellsHeigh="3" iSortedIndex="9" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="277" column="2" cellsHeigh="3" iSortedIndex="12" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="TapTimer" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <coilCalc rung="0" row="344" column="7" cellsHeigh="3" iSortedIndex="23">
+    <coilCalc rung="0" row="344" column="7" cellsHeigh="3" iSortedIndex="26">
       <eStoreIn sAddress="Flow" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="SecondPulses" sIndex="" dtAddress="I32" />
@@ -435,16 +419,16 @@
         <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <TimerCompare rung="0" row="344" column="3" cellsHeigh="-1" iSortedIndex="22" timerCompareType="GreaterOrEqual" timeUnit="sec">
+    <TimerCompare rung="0" row="344" column="3" cellsHeigh="-1" iSortedIndex="25" timerCompareType="GreaterOrEqual" timeUnit="sec">
       <eKeyTimerValue sAddress="Seconds" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="1" sIndex="" dtAddress="UI8" />
     </TimerCompare>
-    <coilCounter rung="0" row="248" column="2" cellsHeigh="-1" iSortedIndex="2" direction="Up">
+    <coilCounter rung="0" row="248" column="2" cellsHeigh="-1" iSortedIndex="4" direction="Up">
       <eCounter sAddress="SecondPulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilCopy rung="0" row="842" column="8" cellsHeigh="5" iSortedIndex="109" CopyType="standard">
+    <coilCopy rung="0" row="842" column="8" cellsHeigh="5" iSortedIndex="118" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
@@ -456,7 +440,7 @@
       <eKeyDestination sAddress="TapTempVol" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="QH2OTap" sIndex="" dtAddress="Float" />
     </coilCopy>
-    <coilCopy rung="0" row="327" column="2" cellsHeigh="3" iSortedIndex="21" CopyType="standard">
+    <coilCopy rung="0" row="327" column="2" cellsHeigh="3" iSortedIndex="24" CopyType="standard">
       <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
@@ -464,27 +448,27 @@
       <eKeyDestination sAddress="SubStep" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="ColdPulses" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilCounter rung="0" row="251" column="2" cellsHeigh="-1" iSortedIndex="3" direction="Up">
+    <coilCounter rung="0" row="251" column="2" cellsHeigh="-1" iSortedIndex="5" direction="Up">
       <eCounter sAddress="TapPulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilFilter rung="0" row="308" column="2" cellsHeigh="3" iSortedIndex="17" filterMode="start" iWeight="7" timeUnit="ms">
+    <coilFilter rung="0" row="308" column="2" cellsHeigh="3" iSortedIndex="20" filterMode="start" iWeight="7" timeUnit="ms">
       <eKeyInput sAddress="DomeTemp" sIndex="" dtAddress="Float" />
       <eKeyOutput sAddress="DomeTempfilt" sIndex="" dtAddress="Float" />
       <eKeyTimeBetweenSamples sAddress="100" sIndex="" dtAddress="UI8" />
     </coilFilter>
-    <coilFilter rung="0" row="316" column="2" cellsHeigh="3" iSortedIndex="19" filterMode="start" iWeight="2" timeUnit="ms">
+    <coilFilter rung="0" row="316" column="2" cellsHeigh="3" iSortedIndex="22" filterMode="start" iWeight="2" timeUnit="ms">
       <eKeyInput sAddress="Outlet" sIndex="" dtAddress="Float" />
       <eKeyOutput sAddress="OutletFilt" sIndex="" dtAddress="Float" />
       <eKeyTimeBetweenSamples sAddress="100" sIndex="" dtAddress="UI8" />
     </coilFilter>
-    <coilFilter rung="0" row="312" column="2" cellsHeigh="3" iSortedIndex="18" filterMode="start" iWeight="7" timeUnit="ms">
+    <coilFilter rung="0" row="312" column="2" cellsHeigh="3" iSortedIndex="21" filterMode="start" iWeight="7" timeUnit="ms">
       <eKeyInput sAddress="Inlet" sIndex="" dtAddress="Float" />
       <eKeyOutput sAddress="InletFilt" sIndex="" dtAddress="Float" />
       <eKeyTimeBetweenSamples sAddress="100" sIndex="" dtAddress="UI8" />
     </coilFilter>
-    <coilCalc rung="0" row="388" column="3" cellsHeigh="3" iSortedIndex="32">
+    <coilCalc rung="0" row="388" column="3" cellsHeigh="3" iSortedIndex="35">
       <eStoreIn sAddress="TotalVolume" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="OutletPulses" sIndex="" dtAddress="I32" />
@@ -495,7 +479,7 @@
         <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="399" column="3" cellsHeigh="3" iSortedIndex="34">
+    <coilCalc rung="0" row="399" column="3" cellsHeigh="3" iSortedIndex="37">
       <eStoreIn sAddress="VolCold" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="ColdPulses" sIndex="" dtAddress="I32" />
@@ -526,13 +510,13 @@
       <bRightUp value="False" />
       <bUp value="False" />
     </flowComment>
-    <coilCopy rung="0" row="348" column="12" cellsHeigh="3" iSortedIndex="24" CopyType="standard">
+    <coilCopy rung="0" row="348" column="12" cellsHeigh="3" iSortedIndex="27" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="SecondPulses" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Seconds" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilCopy rung="0" row="293" column="2" cellsHeigh="5" iSortedIndex="13" CopyType="standard">
+    <coilCopy rung="0" row="293" column="2" cellsHeigh="5" iSortedIndex="16" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="UI8" />
       <eKeySource sAddress="6" sIndex="" dtAddress="UI8" />
       <eKeySource sAddress="59" sIndex="" dtAddress="UI8" />
@@ -546,17 +530,17 @@
       <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="VolProf" sIndex="" dtAddress="Float" />
     </coilCopy>
-    <coilTimer rung="0" row="299" column="3" cellsHeigh="3" iSortedIndex="14" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="299" column="3" cellsHeigh="3" iSortedIndex="17" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="ClockTimer" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <TimerCompare rung="0" row="447" column="4" cellsHeigh="-1" iSortedIndex="41" timerCompareType="GreaterOrEqual" timeUnit="sec">
+    <TimerCompare rung="0" row="447" column="4" cellsHeigh="-1" iSortedIndex="44" timerCompareType="GreaterOrEqual" timeUnit="sec">
       <eKeyTimerValue sAddress="HeartbeatS" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="AccelerateS" sIndex="" dtAddress="Float" />
     </TimerCompare>
-    <coilTimer rung="0" row="281" column="2" cellsHeigh="3" iSortedIndex="10" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="281" column="2" cellsHeigh="3" iSortedIndex="13" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="HeartbeatS" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <coilCalc rung="0" row="458" column="7" cellsHeigh="3" iSortedIndex="45">
+    <coilCalc rung="0" row="458" column="7" cellsHeigh="3" iSortedIndex="48">
       <eStoreIn sAddress="Minute" sIndex="" dtAddress="UI8" />
       <Equation>
         <mathElement sAddress="Minute" sIndex="" dtAddress="UI8" />
@@ -568,11 +552,11 @@
         <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
       </Equation>
     </coilCalc>
-    <coilCopy rung="0" row="462" column="8" cellsHeigh="3" iSortedIndex="46" CopyType="standard">
+    <coilCopy rung="0" row="462" column="8" cellsHeigh="3" iSortedIndex="49" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Second" sIndex="" dtAddress="UI8" />
     </coilCopy>
-    <coilCalc rung="0" row="469" column="8" cellsHeigh="3" iSortedIndex="48">
+    <coilCalc rung="0" row="469" column="8" cellsHeigh="3" iSortedIndex="51">
       <eStoreIn sAddress="Hour" sIndex="" dtAddress="UI8" />
       <Equation>
         <mathElement sAddress="Hour" sIndex="" dtAddress="UI8" />
@@ -584,11 +568,11 @@
         <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
       </Equation>
     </coilCalc>
-    <GreaterEqual rung="0" row="477" column="4" cellsHeigh="-1" iSortedIndex="50">
+    <GreaterEqual rung="0" row="477" column="4" cellsHeigh="-1" iSortedIndex="53">
       <eAddress1 sAddress="Hour" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="24" sIndex="" dtAddress="UI8" />
     </GreaterEqual>
-    <coilCalc rung="0" row="480" column="8" cellsHeigh="3" iSortedIndex="51">
+    <coilCalc rung="0" row="480" column="8" cellsHeigh="3" iSortedIndex="54">
       <eStoreIn sAddress="Day" sIndex="" dtAddress="UI8" />
       <Equation>
         <mathElement sAddress="Day" sIndex="" dtAddress="UI8" />
@@ -598,15 +582,15 @@
         <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
       </Equation>
     </coilCalc>
-    <coilCopy rung="0" row="473" column="9" cellsHeigh="3" iSortedIndex="49" CopyType="standard">
+    <coilCopy rung="0" row="473" column="9" cellsHeigh="3" iSortedIndex="52" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
       <eKeyDestination sAddress="Minute" sIndex="" dtAddress="UI8" />
     </coilCopy>
-    <coilCopy rung="0" row="485" column="9" cellsHeigh="3" iSortedIndex="52" CopyType="standard">
+    <coilCopy rung="0" row="485" column="9" cellsHeigh="3" iSortedIndex="55" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
       <eKeyDestination sAddress="Hour" sIndex="" dtAddress="UI8" />
     </coilCopy>
-    <coilCalc rung="0" row="447" column="8" cellsHeigh="3" iSortedIndex="42">
+    <coilCalc rung="0" row="447" column="8" cellsHeigh="3" iSortedIndex="45">
       <eStoreIn sAddress="Second" sIndex="" dtAddress="UI8" />
       <Equation>
         <mathElement sAddress="Second" sIndex="" dtAddress="UI8" />
@@ -617,19 +601,19 @@
         <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
       </Equation>
     </coilCalc>
-    <coilCopy rung="0" row="451" column="8" cellsHeigh="3" iSortedIndex="43" CopyType="standard">
+    <coilCopy rung="0" row="451" column="8" cellsHeigh="3" iSortedIndex="46" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="HeartbeatS" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <GreaterEqual rung="0" row="466" column="4" cellsHeigh="-1" iSortedIndex="47">
+    <GreaterEqual rung="0" row="466" column="4" cellsHeigh="-1" iSortedIndex="50">
       <eAddress1 sAddress="Minute" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="60" sIndex="" dtAddress="UI8" />
     </GreaterEqual>
-    <GreaterEqual rung="0" row="454" column="4" cellsHeigh="-1" iSortedIndex="44">
+    <GreaterEqual rung="0" row="454" column="4" cellsHeigh="-1" iSortedIndex="47">
       <eAddress1 sAddress="Second" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="60" sIndex="" dtAddress="UI8" />
     </GreaterEqual>
-    <coilCalc rung="0" row="443" column="2" cellsHeigh="3" iSortedIndex="40">
+    <coilCalc rung="0" row="443" column="2" cellsHeigh="3" iSortedIndex="43">
       <eStoreIn sAddress="AccelerateS" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
@@ -639,14 +623,14 @@
         <mathElement sAddress="Speed" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <GreaterEqual rung="0" row="687" column="11" cellsHeigh="-1" iSortedIndex="77">
+    <GreaterEqual rung="0" row="687" column="11" cellsHeigh="-1" iSortedIndex="81">
       <eAddress1 sAddress="MinsToday" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="TapTime" sIndex="" dtAddress="I32" />
     </GreaterEqual>
-    <NC rung="0" row="698" column="11" cellsHeigh="-1" iSortedIndex="78">
+    <NC rung="0" row="698" column="11" cellsHeigh="-1" iSortedIndex="82">
       <eAddress1 sAddress="Tapping" sIndex="" dtAddress="Bit" />
     </NC>
-    <coilCopy rung="0" row="698" column="15" cellsHeigh="3" iSortedIndex="79" CopyType="standard">
+    <coilCopy rung="0" row="698" column="15" cellsHeigh="3" iSortedIndex="83" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
@@ -654,7 +638,7 @@
       <eKeyDestination sAddress="Tapping" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="RunColdPulses" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilCalc rung="0" row="720" column="11" cellsHeigh="3" iSortedIndex="86">
+    <coilCalc rung="0" row="720" column="11" cellsHeigh="3" iSortedIndex="92">
       <eStoreIn sAddress="TapVol" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
@@ -664,14 +648,14 @@
         <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilTimer rung="0" row="285" column="2" cellsHeigh="3" iSortedIndex="11" myType="Timer" myTimerCommand="Start">
+    <coilTimer rung="0" row="285" column="2" cellsHeigh="3" iSortedIndex="14" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="TapSecondTimer" sIndex="" dtAddress="I32" />
     </coilTimer>
-    <TimerCompare rung="0" row="724" column="12" cellsHeigh="-1" iSortedIndex="87" timerCompareType="Less" timeUnit="sec">
+    <TimerCompare rung="0" row="724" column="12" cellsHeigh="-1" iSortedIndex="93" timerCompareType="Less" timeUnit="sec">
       <eKeyTimerValue sAddress="TapSecondTimer" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="1" sIndex="" dtAddress="UI8" />
     </TimerCompare>
-    <coilCalc rung="0" row="746" column="16" cellsHeigh="3" iSortedIndex="92">
+    <coilCalc rung="0" row="746" column="16" cellsHeigh="3" iSortedIndex="101">
       <eStoreIn sAddress="QH2Osec" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TapVolSec" sIndex="" dtAddress="Float" />
@@ -689,11 +673,11 @@
         <mathElement sAddress="0.001163" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <LessEqual rung="0" row="764" column="11" cellsHeigh="-1" iSortedIndex="95">
+    <LessEqual rung="0" row="764" column="11" cellsHeigh="-1" iSortedIndex="104">
       <eAddress1 sAddress="Tm" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="Outlet" sIndex="" dtAddress="Float" />
     </LessEqual>
-    <coilCalc rung="0" row="766" column="15" cellsHeigh="3" iSortedIndex="96">
+    <coilCalc rung="0" row="766" column="15" cellsHeigh="3" iSortedIndex="105">
       <eStoreIn sAddress="QH2OTap" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="QH2OTap" sIndex="" dtAddress="Float" />
@@ -704,7 +688,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="772" column="14" cellsHeigh="3" iSortedIndex="117">
+    <coilCalc rung="0" row="772" column="14" cellsHeigh="3" iSortedIndex="128">
       <eStoreIn sAddress="QH2OBadTap" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="QH2OBadTap" sIndex="" dtAddress="Float" />
@@ -716,7 +700,7 @@
       </Equation>
     </coilCalc>
     <wireRouter rung="0" row="776" column="21" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilCalc rung="0" row="728" column="12" cellsHeigh="3" iSortedIndex="89">
+    <coilCalc rung="0" row="728" column="12" cellsHeigh="3" iSortedIndex="98">
       <eStoreIn sAddress="TapVolSec" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TapSecondPulses" sIndex="" dtAddress="I32" />
@@ -727,25 +711,25 @@
         <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCopy rung="0" row="740" column="13" cellsHeigh="3" iSortedIndex="91" CopyType="standard">
+    <coilCopy rung="0" row="740" column="13" cellsHeigh="3" iSortedIndex="100" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="TapSecondPulses" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="TapSecondTimer" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <NO rung="0" row="779" column="13" cellsHeigh="-1" iSortedIndex="97">
+    <NO rung="0" row="779" column="13" cellsHeigh="-1" iSortedIndex="106">
       <eAddress1 sAddress="VolumeOrEnergy" sIndex="" dtAddress="Bit" />
     </NO>
-    <Greater rung="0" row="787" column="13" cellsHeigh="-1" iSortedIndex="98">
+    <Greater rung="0" row="787" column="13" cellsHeigh="-1" iSortedIndex="107">
       <eAddress1 sAddress="QH2OTap" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="QTap" sIndex="" dtAddress="Float" />
     </Greater>
     <wireRouter rung="0" row="792" column="8" cellsHeigh="-1" iSortedIndex="-1" />
-    <Greater rung="0" row="784" column="8" cellsHeigh="-1" iSortedIndex="118">
+    <Greater rung="0" row="784" column="8" cellsHeigh="-1" iSortedIndex="129">
       <eAddress1 sAddress="TapVol" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="VolProf" sIndex="" dtAddress="Float" />
     </Greater>
-    <coilCalc rung="0" row="794" column="8" cellsHeigh="3" iSortedIndex="99">
+    <coilCalc rung="0" row="794" column="8" cellsHeigh="3" iSortedIndex="108">
       <eStoreIn sAddress="TotalQH2O" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TotalQH2O" sIndex="" dtAddress="Float" />
@@ -757,7 +741,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCopy rung="0" row="817" column="10" cellsHeigh="3" iSortedIndex="105" CopyType="standard">
+    <coilCopy rung="0" row="817" column="10" cellsHeigh="3" iSortedIndex="114" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
@@ -765,7 +749,7 @@
       <eKeyDestination sAddress="Tapping" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="OutletSol" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <coilCalc rung="0" row="821" column="9" cellsHeigh="3" iSortedIndex="106">
+    <coilCalc rung="0" row="821" column="9" cellsHeigh="3" iSortedIndex="115">
       <eStoreIn sAddress="NextTap" sIndex="" dtAddress="UI16" />
       <Equation>
         <mathElement sAddress="NextTap" sIndex="" dtAddress="UI16" />
@@ -777,7 +761,7 @@
       </Equation>
     </coilCalc>
     <wireRouter rung="0" row="851" column="22" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilCalc rung="0" row="798" column="8" cellsHeigh="3" iSortedIndex="100">
+    <coilCalc rung="0" row="798" column="8" cellsHeigh="3" iSortedIndex="109">
       <eStoreIn sAddress="TotalQtap" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TotalQtap" sIndex="" dtAddress="Float" />
@@ -789,7 +773,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="802" column="8" cellsHeigh="3" iSortedIndex="101">
+    <coilCalc rung="0" row="802" column="8" cellsHeigh="3" iSortedIndex="110">
       <eStoreIn sAddress="TotalVtap" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TotalVtap" sIndex="" dtAddress="Float" />
@@ -801,7 +785,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="352" column="11" cellsHeigh="3" iSortedIndex="25">
+    <coilCalc rung="0" row="352" column="11" cellsHeigh="3" iSortedIndex="28">
       <eStoreIn sAddress="EnergyInJ" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
@@ -819,7 +803,7 @@
         <mathElement sAddress="Resistance" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="362" column="11" cellsHeigh="3" iSortedIndex="27">
+    <coilCalc rung="0" row="362" column="11" cellsHeigh="3" iSortedIndex="30">
       <eStoreIn sAddress="QtotalJ" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="QtotalJ" sIndex="" dtAddress="Float" />
@@ -828,7 +812,7 @@
         <mathElement sAddress="EnergyInJ" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="356" column="11" cellsHeigh="3" iSortedIndex="26">
+    <coilCalc rung="0" row="356" column="11" cellsHeigh="3" iSortedIndex="29">
       <eStoreIn sAddress="kW" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="EnergyInJ" sIndex="" dtAddress="Float" />
@@ -839,7 +823,7 @@
         <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="805" column="8" cellsHeigh="3" iSortedIndex="102">
+    <coilCalc rung="0" row="805" column="8" cellsHeigh="3" iSortedIndex="111">
       <eStoreIn sAddress="TotalTapVol" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TotalTapVol" sIndex="" dtAddress="Float" />
@@ -849,22 +833,22 @@
         <mathElement sAddress="TapVol" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCounter rung="0" row="258" column="2" cellsHeigh="-1" iSortedIndex="5" direction="Up">
+    <coilCounter rung="0" row="258" column="2" cellsHeigh="-1" iSortedIndex="7" direction="Up">
       <eCounter sAddress="ColdPulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB1" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilCounter rung="0" row="262" column="2" cellsHeigh="-1" iSortedIndex="6" direction="Up">
+    <coilCounter rung="0" row="262" column="2" cellsHeigh="-1" iSortedIndex="8" direction="Up">
       <eCounter sAddress="RunColdPulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB1" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilCounter rung="0" row="255" column="2" cellsHeigh="-1" iSortedIndex="4" direction="Up">
+    <coilCounter rung="0" row="255" column="2" cellsHeigh="-1" iSortedIndex="6" direction="Up">
       <eCounter sAddress="TapSecondPulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilCalc rung="0" row="393" column="3" cellsHeigh="3" iSortedIndex="33">
+    <coilCalc rung="0" row="393" column="3" cellsHeigh="3" iSortedIndex="36">
       <eStoreIn sAddress="RunColdVolume" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="RunColdPulses" sIndex="" dtAddress="I32" />
@@ -876,7 +860,7 @@
       </Equation>
     </coilCalc>
     <wireRouter rung="0" row="702" column="13" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilCalc rung="0" row="704" column="11" cellsHeigh="3" iSortedIndex="80">
+    <coilCalc rung="0" row="704" column="11" cellsHeigh="3" iSortedIndex="84">
       <eStoreIn sAddress="RunColdVolume" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="RunColdPulses" sIndex="" dtAddress="I32" />
@@ -887,23 +871,23 @@
         <mathElement sAddress="2200.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <Less rung="0" row="709" column="12" cellsHeigh="-1" iSortedIndex="81">
+    <Less rung="0" row="709" column="12" cellsHeigh="-1" iSortedIndex="85">
       <eAddress1 sAddress="RunColdVolume" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress=".5" sIndex="" dtAddress="Float" />
     </Less>
-    <coilCopy rung="0" row="713" column="11" cellsHeigh="3" iSortedIndex="85" CopyType="standard">
+    <coilCopy rung="0" row="713" column="11" cellsHeigh="3" iSortedIndex="91" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="OutletSol" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="InletSol" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <coilCopy rung="0" row="709" column="16" cellsHeigh="3" iSortedIndex="82" CopyType="standard">
+    <coilCopy rung="0" row="709" column="16" cellsHeigh="3" iSortedIndex="86" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="OutletSol" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="InletSol" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <coilCalc rung="0" row="732" column="12" cellsHeigh="3" iSortedIndex="90">
+    <coilCalc rung="0" row="732" column="12" cellsHeigh="3" iSortedIndex="99">
       <eStoreIn sAddress="TapTempVolSec" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TapVolSec" sIndex="" dtAddress="Float" />
@@ -913,7 +897,7 @@
         <mathElement sAddress="InletFilt" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="752" column="15" cellsHeigh="3" iSortedIndex="93">
+    <coilCalc rung="0" row="752" column="15" cellsHeigh="3" iSortedIndex="102">
       <eStoreIn sAddress="TapVol" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TapVol" sIndex="" dtAddress="Float" />
@@ -925,7 +909,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="756" column="15" cellsHeigh="3" iSortedIndex="94">
+    <coilCalc rung="0" row="756" column="15" cellsHeigh="3" iSortedIndex="103">
       <eStoreIn sAddress="TapTempVol" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TapTempVol" sIndex="" dtAddress="Float" />
@@ -935,7 +919,7 @@
         <mathElement sAddress="TapTempVolSec" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="808" column="8" cellsHeigh="3" iSortedIndex="103">
+    <coilCalc rung="0" row="808" column="8" cellsHeigh="3" iSortedIndex="112">
       <eStoreIn sAddress="TotalTapTempVol" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TotalTapTempVol" sIndex="" dtAddress="Float" />
@@ -946,7 +930,7 @@
         <mathElement sAddress="TapTempVol" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="812" column="8" cellsHeigh="3" iSortedIndex="104">
+    <coilCalc rung="0" row="812" column="8" cellsHeigh="3" iSortedIndex="113">
       <eStoreIn sAddress="AvgInletTapTemp" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="TotalTapTempVol" sIndex="" dtAddress="Float" />
@@ -978,7 +962,7 @@
       <bRightUp value="False" />
       <bUp value="False" />
     </flowComment>
-    <coilCalc rung="0" row="379" column="11" cellsHeigh="3" iSortedIndex="31">
+    <coilCalc rung="0" row="379" column="11" cellsHeigh="3" iSortedIndex="34">
       <eStoreIn sAddress="QtotalkWh" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="QtotalJ" sIndex="" dtAddress="Float" />
@@ -989,7 +973,7 @@
         <mathElement sAddress="3600000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="370" column="11" cellsHeigh="3" iSortedIndex="29">
+    <coilCalc rung="0" row="370" column="11" cellsHeigh="3" iSortedIndex="32">
       <eStoreIn sAddress="Qsmarttestelec" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="Qsmarttestelec" sIndex="" dtAddress="Float" />
@@ -1002,7 +986,7 @@
         <mathElement sAddress="3600000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="374" column="11" cellsHeigh="3" iSortedIndex="30">
+    <coilCalc rung="0" row="374" column="11" cellsHeigh="3" iSortedIndex="33">
       <eStoreIn sAddress="Qreftestelec" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="Qreftestelec" sIndex="" dtAddress="Float" />
@@ -1014,7 +998,7 @@
         <mathElement sAddress="3600000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="366" column="11" cellsHeigh="3" iSortedIndex="28">
+    <coilCalc rung="0" row="366" column="11" cellsHeigh="3" iSortedIndex="31">
       <eStoreIn sAddress="Qtestelec" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="Qtestelec" sIndex="" dtAddress="Float" />
@@ -1036,7 +1020,7 @@
       <bRightUp value="False" />
       <bUp value="False" />
     </flowComment>
-    <coilCalc rung="0" row="574" column="3" cellsHeigh="3" iSortedIndex="73">
+    <coilCalc rung="0" row="574" column="3" cellsHeigh="3" iSortedIndex="77">
       <eStoreIn sAddress="MinsToday" sIndex="" dtAddress="UI16" />
       <Equation>
         <mathElement sAddress="Minute" sIndex="" dtAddress="UI8" />
@@ -1080,7 +1064,7 @@
       <eKeyDestination sAddress="EtaWH" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="ElementOnHours" sIndex="" dtAddress="Float" />
     </coilCopy>
-    <coilSubroutine rung="0" row="595" column="9" cellsHeigh="7" iSortedIndex="75" SubroutineName="RetriveTappings.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="595" column="9" cellsHeigh="7" iSortedIndex="79" SubroutineName="RetriveTappings.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="Profile" sIndex="" dtAddress="UI16" />
       <eSub sAddress="Profile" sIndex="" dtAddress="UI16" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1109,7 +1093,7 @@
       <eSub sAddress="HHMM" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
-    <coilSubroutine rung="0" row="589" column="9" cellsHeigh="5" iSortedIndex="74" SubroutineName="SmartDayProfile.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="589" column="9" cellsHeigh="5" iSortedIndex="78" SubroutineName="SmartDayProfile.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="Day" sIndex="" dtAddress="UI8" />
       <eSub sAddress="Day" sIndex="" dtAddress="UI8" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1123,7 +1107,7 @@
       <eSub sAddress="Smart" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="False" />
     </coilSubroutine>
-    <coilSubroutine rung="0" row="568" column="4" cellsHeigh="5" iSortedIndex="72" SubroutineName="ProgressCheck.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="568" column="4" cellsHeigh="5" iSortedIndex="76" SubroutineName="ProgressCheck.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="SmartOn" sIndex="" dtAddress="Bit" />
       <eSub sAddress="Smart" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1140,7 +1124,7 @@
       <eSub sAddress="NextStep" sIndex="" dtAddress="UI16" />
       <bPassByRefOrFromEmbedded value="False" />
     </coilSubroutine>
-    <coilSubroutine rung="0" row="334" column="6" cellsHeigh="5" iSortedIndex="58" SubroutineName="ProgressCheck.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="334" column="6" cellsHeigh="5" iSortedIndex="61" SubroutineName="ProgressCheck.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="SmartOn" sIndex="" dtAddress="Bit" />
       <eSub sAddress="Smart" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1157,7 +1141,7 @@
       <eSub sAddress="NextStep" sIndex="" dtAddress="UI16" />
       <bPassByRefOrFromEmbedded value="False" />
     </coilSubroutine>
-    <coilCopy rung="0" row="848" column="8" cellsHeigh="3" iSortedIndex="110" CopyType="standard">
+    <coilCopy rung="0" row="848" column="8" cellsHeigh="3" iSortedIndex="119" CopyType="standard">
       <eKeySource sAddress="TotalQH2O" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="TotalVolume" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="TotalQtap" sIndex="" dtAddress="Float" />
@@ -1175,7 +1159,7 @@
       <bRightUp value="False" />
       <bUp value="False" />
     </flowComment>
-    <coilSubroutine rung="0" row="852" column="8" cellsHeigh="5" iSortedIndex="111" SubroutineName="CalcQElec.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="852" column="8" cellsHeigh="5" iSortedIndex="120" SubroutineName="CalcQElec.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="QRefSum" sIndex="" dtAddress="Float" />
       <eSub sAddress="Qref" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1198,7 +1182,7 @@
       <eSub sAddress="Qelec" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
-    <coilSubroutine rung="0" row="858" column="8" cellsHeigh="5" iSortedIndex="112" SubroutineName="CalcEfficiency.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="858" column="8" cellsHeigh="5" iSortedIndex="121" SubroutineName="CalcEfficiency.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="SmartOn" sIndex="" dtAddress="Bit" />
       <eSub sAddress="Smart" sIndex="" dtAddress="Bit" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1221,23 +1205,20 @@
       <eSub sAddress="EtaWH" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
-    <NO rung="0" row="865" column="10" cellsHeigh="-1" iSortedIndex="113">
+    <NO rung="0" row="865" column="10" cellsHeigh="-1" iSortedIndex="122">
       <eAddress1 sAddress="DoneTapping" sIndex="" dtAddress="Bit" />
     </NO>
-    <coilCopy rung="0" row="873" column="9" cellsHeigh="3" iSortedIndex="115" CopyType="standard">
+    <coilCopy rung="0" row="873" column="9" cellsHeigh="3" iSortedIndex="124" CopyType="standard">
       <eKeySource sAddress="5" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Step5TMR" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <NC rung="0" row="869" column="10" cellsHeigh="-1" iSortedIndex="114">
+    <NC rung="0" row="869" column="10" cellsHeigh="-1" iSortedIndex="123">
       <eAddress1 sAddress="SmartOn" sIndex="" dtAddress="Bit" />
     </NC>
-    <NO rung="0" row="329" column="9" cellsHeigh="-1" iSortedIndex="57">
-      <eAddress1 sAddress="RunPause" sIndex="" dtAddress="Bit" />
-    </NO>
     <wireRouter rung="0" row="330" column="23" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilSubroutine rung="0" row="604" column="9" cellsHeigh="3" iSortedIndex="76" SubroutineName="CalcHHMM.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="604" column="9" cellsHeigh="3" iSortedIndex="80" SubroutineName="CalcHHMM.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="TapTime" sIndex="" dtAddress="I32" />
       <eSub sAddress="Minutes" sIndex="" dtAddress="I32" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1245,7 +1226,7 @@
       <eSub sAddress="HHMM" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
-    <coilCopy rung="0" row="825" column="9" cellsHeigh="9" iSortedIndex="107" CopyType="standard">
+    <coilCopy rung="0" row="825" column="9" cellsHeigh="9" iSortedIndex="116" CopyType="standard">
       <eKeySource sAddress="QH2OTap" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="Qref" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="QrefBad" sIndex="" dtAddress="Float" />
@@ -1277,7 +1258,7 @@
       <eKeyDestination sAddress="LastTp" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="LastFlow" sIndex="" dtAddress="Float" />
     </coilCopy>
-    <coilCalc rung="0" row="836" column="7" cellsHeigh="3" iSortedIndex="108">
+    <coilCalc rung="0" row="836" column="7" cellsHeigh="3" iSortedIndex="117">
       <eStoreIn sAddress="LastNextTap" sIndex="" dtAddress="UI16" />
       <Equation>
         <mathElement sAddress="NextTap" sIndex="" dtAddress="UI16" />
@@ -1288,32 +1269,28 @@
         <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
       </Equation>
     </coilCalc>
-    <Equal rung="0" row="889" column="2" cellsHeigh="-1" iSortedIndex="88">
-      <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
-      <eAddress2 sAddress="6" sIndex="" dtAddress="UI8" />
-    </Equal>
-    <Equal rung="0" row="877" column="1" cellsHeigh="-1" iSortedIndex="83">
+    <Equal rung="0" row="877" column="1" cellsHeigh="-1" iSortedIndex="87">
       <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="5" sIndex="" dtAddress="UI8" />
     </Equal>
-    <TimerCompare rung="0" row="878" column="10" cellsHeigh="-1" iSortedIndex="-1" timerCompareType="GreaterOrEqual" timeUnit="hr">
+    <TimerCompare rung="0" row="878" column="10" cellsHeigh="-1" iSortedIndex="88" timerCompareType="Less" timeUnit="sec">
       <eKeyTimerValue sAddress="Step5TMR" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="12" sIndex="" dtAddress="UI8" />
     </TimerCompare>
-    <coilCopy rung="0" row="878" column="15" cellsHeigh="3" iSortedIndex="-1" CopyType="standard">
+    <coilCopy rung="0" row="878" column="15" cellsHeigh="3" iSortedIndex="97" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="ThermostatOff" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="V40Running" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <Greater rung="0" row="884" column="10" cellsHeigh="-1" iSortedIndex="-1">
+    <Greater rung="0" row="884" column="10" cellsHeigh="-1" iSortedIndex="89">
       <eAddress1 sAddress="ThermostatOff" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="0" sIndex="" dtAddress="UI8" />
     </Greater>
-    <NC rung="0" row="888" column="10" cellsHeigh="-1" iSortedIndex="-1">
+    <NC rung="0" row="894" column="10" cellsHeigh="-1" iSortedIndex="95">
       <eAddress1 sAddress="V40Running" sIndex="" dtAddress="Bit" />
     </NC>
-    <coilCopy rung="0" row="888" column="14" cellsHeigh="7" iSortedIndex="-1" CopyType="standard">
+    <coilCopy rung="0" row="894" column="14" cellsHeigh="7" iSortedIndex="96" CopyType="standard">
       <eKeySource sAddress="DomeTemp" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
@@ -1335,31 +1312,31 @@
       <eKeyDestination sAddress="InletSol" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="v40Pulses" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <Less rung="0" row="897" column="10" cellsHeigh="-1" iSortedIndex="-1">
+    <Less rung="0" row="903" column="10" cellsHeigh="-1" iSortedIndex="126">
       <eAddress1 sAddress="VolCold" sIndex="" dtAddress="Float" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Less>
-    <wireRouter rung="0" row="898" column="23" cellsHeigh="-1" iSortedIndex="-1" />
-    <coilCounter rung="0" row="266" column="2" cellsHeigh="-1" iSortedIndex="-1" direction="Up">
+    <wireRouter rung="0" row="904" column="23" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilCounter rung="0" row="266" column="2" cellsHeigh="-1" iSortedIndex="9" direction="Up">
       <eCounter sAddress="v40Pulses" sIndex="" dtAddress="I32" />
       <eBitCausesCount sAddress="InBitB2" sIndex="" dtAddress="Bit" />
       <bRisingEdgeTrigger value="True" />
     </coilCounter>
-    <coilCopy rung="0" row="897" column="14" cellsHeigh="3" iSortedIndex="-1" CopyType="standard">
+    <coilCopy rung="0" row="903" column="14" cellsHeigh="3" iSortedIndex="127" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="Step5TMR" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilCopy rung="0" row="902" column="10" cellsHeigh="3" iSortedIndex="-1" CopyType="standard">
+    <coilCopy rung="0" row="908" column="10" cellsHeigh="3" iSortedIndex="130" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="InletSol" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="OutletSol" sIndex="" dtAddress="Bit" />
     </coilCopy>
-    <TimerCompare rung="0" row="907" column="11" cellsHeigh="-1" iSortedIndex="-1" timerCompareType="GreaterOrEqual" timeUnit="sec">
-      <eKeyTimerValue sAddress="Step5TMR" sIndex="" dtAddress="I32" />
+    <TimerCompare rung="0" row="913" column="11" cellsHeigh="-1" iSortedIndex="131" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="V40SecTimer" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="1" sIndex="" dtAddress="UI8" />
     </TimerCompare>
-    <coilCalc rung="0" row="911" column="10" cellsHeigh="3" iSortedIndex="-1">
+    <coilCalc rung="0" row="917" column="10" cellsHeigh="3" iSortedIndex="132">
       <eStoreIn sAddress="V40SecVol" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="v40Pulses" sIndex="" dtAddress="I32" />
@@ -1370,7 +1347,7 @@
         <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="915" column="10" cellsHeigh="3" iSortedIndex="-1">
+    <coilCalc rung="0" row="921" column="10" cellsHeigh="3" iSortedIndex="133">
       <eStoreIn sAddress="V40exp" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="V40exp" sIndex="" dtAddress="Float" />
@@ -1381,7 +1358,7 @@
         <mathElement sAddress="V40SecVol" sIndex="" dtAddress="Float" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="919" column="10" cellsHeigh="3" iSortedIndex="-1">
+    <coilCalc rung="0" row="925" column="10" cellsHeigh="3" iSortedIndex="134">
       <eStoreIn sAddress="ThetaCVT" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="ThetaCVT" sIndex="" dtAddress="Float" />
@@ -1397,7 +1374,7 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <coilCalc rung="0" row="923" column="10" cellsHeigh="3" iSortedIndex="-1">
+    <coilCalc rung="0" row="929" column="10" cellsHeigh="3" iSortedIndex="135">
       <eStoreIn sAddress="ThetaPDashVT" sIndex="" dtAddress="Float" />
       <Equation>
         <mathElement sAddress="ThetaPDashVT" sIndex="" dtAddress="Float" />
@@ -1413,21 +1390,14 @@
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
-    <Greater rung="0" row="933" column="12" cellsHeigh="-1" iSortedIndex="-1">
-      <eAddress1 sAddress="OutletFilt" sIndex="" dtAddress="Float" />
-      <eAddress2 sAddress="40" sIndex="" dtAddress="UI8" />
-    </Greater>
-    <coilCopy rung="0" row="927" column="11" cellsHeigh="3" iSortedIndex="-1" CopyType="standard">
+    <coilCopy rung="0" row="933" column="11" cellsHeigh="3" iSortedIndex="136" CopyType="standard">
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="Step5TMR" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="V40SecTimer" sIndex="" dtAddress="I32" />
     </coilCopy>
-    <coilSubroutine rung="0" row="937" column="10" cellsHeigh="7" iSortedIndex="-1" SubroutineName="CalcV40.viofs" bIsEmbeddedSub="false">
+    <coilSubroutine rung="0" row="943" column="10" cellsHeigh="7" iSortedIndex="137" SubroutineName="CalcV40.viofs" bIsEmbeddedSub="false">
       <eLocal sAddress="Tset" sIndex="" dtAddress="Float" />
       <eSub sAddress="Tset" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="False" />
-      <eLocal sAddress="V40exp" sIndex="" dtAddress="Float" />
-      <eSub sAddress="V40exp" sIndex="" dtAddress="Float" />
-      <bPassByRefOrFromEmbedded value="True" />
       <eLocal sAddress="ThetaCVT" sIndex="" dtAddress="Float" />
       <eSub sAddress="ThetaCVT" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="False" />
@@ -1436,7 +1406,7 @@
       <bPassByRefOrFromEmbedded value="False" />
       <eLocal sAddress="V40exp" sIndex="" dtAddress="Float" />
       <eSub sAddress="V40exp" sIndex="" dtAddress="Float" />
-      <bPassByRefOrFromEmbedded value="True" />
+      <bPassByRefOrFromEmbedded value="False" />
       <eLocal sAddress="V40" sIndex="" dtAddress="Float" />
       <eSub sAddress="V40" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
@@ -1450,17 +1420,48 @@
       <eSub sAddress="ThetaPDash" sIndex="" dtAddress="Float" />
       <bPassByRefOrFromEmbedded value="True" />
     </coilSubroutine>
-    <coilCopy rung="0" row="946" column="11" cellsHeigh="3" iSortedIndex="-1" CopyType="standard">
+    <NO rung="0" row="324" column="13" cellsHeigh="-1" iSortedIndex="60">
+      <eAddress1 sAddress="RunPause" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="321" column="9" cellsHeigh="3" iSortedIndex="68" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="InletSol" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="OutletSol" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="956" column="11" cellsHeigh="3" iSortedIndex="139" CopyType="standard">
+      <eKeySource sAddress="19" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Greater rung="0" row="951" column="12" cellsHeigh="-1" iSortedIndex="138">
+      <eAddress1 sAddress="OutletFilt" sIndex="" dtAddress="Float" />
+      <eAddress2 sAddress="40" sIndex="" dtAddress="UI8" />
+    </Greater>
+    <Equal rung="0" row="882" column="1" cellsHeigh="-1" iSortedIndex="94">
+      <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="6" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <coilCopy rung="0" row="888" column="10" cellsHeigh="3" iSortedIndex="90" CopyType="standard">
       <eKeySource sAddress="6" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
     </coilCopy>
+    <Equal rung="0" row="890" column="2" cellsHeigh="-1" iSortedIndex="125">
+      <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="19" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <coilTimer rung="0" row="19" column="3" cellsHeigh="3" iSortedIndex="2" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="V40WaitTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="24" column="3" cellsHeigh="3" iSortedIndex="3" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="V40SecTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
   </Cells>
   <FlowConnections>
     <FlowConn From="0" Yes="28" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="1" Yes="36" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="2" Yes="1" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="3" Yes="4" dirYesFrom="up" dirYesTo="down" />
-    <FlowConn From="4" Yes="129" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="4" Yes="128" dirYesFrom="up" dirYesTo="down" />
     <FlowConn From="5" Yes="12" dirYesFrom="right" dirYesTo="left" No="15" dirNoFrom="down" dirNoTo="up" />
     <FlowConn From="6" Yes="7" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="7" Yes="8" dirYesFrom="down" dirYesTo="up" />
@@ -1485,7 +1486,7 @@
     <FlowConn From="26" Yes="27" dirYesFrom="right" dirYesTo="up" />
     <FlowConn From="27" Yes="43" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="28" Yes="116" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="29" Yes="119" dirYesFrom="down" dirYesTo="up" No="134" dirNoFrom="left" dirNoTo="up" />
+    <FlowConn From="29" Yes="119" dirYesFrom="down" dirYesTo="up" No="132" dirNoFrom="left" dirNoTo="up" />
     <FlowConn From="30" Yes="51" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="33" Yes="35" dirYesFrom="right" dirYesTo="left" />
     <FlowConn From="34" Yes="33" dirYesFrom="right" dirYesTo="left" No="14" dirNoFrom="down" dirNoTo="left" />
@@ -1538,7 +1539,7 @@
     <FlowConn From="83" Yes="82" dirYesFrom="down" dirYesTo="up" No="87" dirNoFrom="right" dirNoTo="left" />
     <FlowConn From="84" Yes="88" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="85" Yes="86" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="86" Yes="131" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="86" Yes="130" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="87" Yes="35" dirYesFrom="right" dirYesTo="down" />
     <FlowConn From="88" Yes="89" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="89" Yes="93" dirYesFrom="down" dirYesTo="up" />
@@ -1547,7 +1548,7 @@
     <FlowConn From="92" Yes="91" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="93" Yes="106" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="94" Yes="95" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="95" Yes="142" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="95" Yes="140" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="96" Yes="94" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="97" Yes="47" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="98" Yes="99" dirYesFrom="down" dirYesTo="up" />
@@ -1565,8 +1566,8 @@
     <FlowConn From="112" Yes="110" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="113" Yes="111" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="115" Yes="118" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="116" Yes="39" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="117" Yes="130" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="116" Yes="157" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="117" Yes="129" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="118" Yes="117" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="119" Yes="115" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="120" Yes="38" dirYesFrom="left" dirYesTo="up" />
@@ -1576,32 +1577,37 @@
     <FlowConn From="125" Yes="127" dirYesFrom="down" dirYesTo="up" No="87" dirNoFrom="right" dirNoTo="down" />
     <FlowConn From="126" Yes="87" dirYesFrom="right" dirYesTo="down" />
     <FlowConn From="127" Yes="126" dirYesFrom="down" dirYesTo="up" No="126" dirNoFrom="left" dirNoTo="left" />
-    <FlowConn From="128" Yes="120" dirYesFrom="down" dirYesTo="up" No="128" dirNoFrom="left" dirNoTo="up" />
-    <FlowConn From="129" Yes="128" dirYesFrom="left" dirYesTo="up" />
-    <FlowConn From="130" Yes="67" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="131" Yes="132" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="132" Yes="40" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="133" Yes="133" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="134" Yes="135" dirYesFrom="right" dirYesTo="left" No="133" dirNoFrom="down" dirNoTo="up" />
-    <FlowConn From="135" Yes="137" dirYesFrom="down" dirYesTo="up" No="136" dirNoFrom="right" dirNoTo="left" />
-    <FlowConn From="136" Yes="87" dirYesFrom="right" dirYesTo="down" />
-    <FlowConn From="137" Yes="138" dirYesFrom="down" dirYesTo="up" No="87" dirNoFrom="right" dirNoTo="down" />
-    <FlowConn From="138" Yes="139" dirYesFrom="right" dirYesTo="left" No="140" dirNoFrom="down" dirNoTo="up" />
-    <FlowConn From="139" Yes="87" dirYesFrom="right" dirYesTo="down" />
-    <FlowConn From="140" Yes="143" dirYesFrom="right" dirYesTo="left" No="144" dirNoFrom="down" dirNoTo="up" />
-    <FlowConn From="141" Yes="87" dirYesFrom="up" dirYesTo="down" />
-    <FlowConn From="142" Yes="2" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="143" Yes="141" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="128" Yes="150" dirYesFrom="left" dirYesTo="up" />
+    <FlowConn From="129" Yes="67" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="130" Yes="131" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="131" Yes="40" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="132" Yes="133" dirYesFrom="right" dirYesTo="left" No="154" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="133" Yes="135" dirYesFrom="down" dirYesTo="up" No="134" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="134" Yes="87" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="135" Yes="155" dirYesFrom="down" dirYesTo="up" No="87" dirNoFrom="right" dirNoTo="down" />
+    <FlowConn From="136" Yes="137" dirYesFrom="right" dirYesTo="left" No="138" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="137" Yes="87" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="138" Yes="141" dirYesFrom="right" dirYesTo="left" No="142" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="139" Yes="87" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="140" Yes="2" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="141" Yes="139" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="142" Yes="143" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="143" Yes="144" dirYesFrom="down" dirYesTo="up" No="139" dirNoFrom="right" dirNoTo="down" />
     <FlowConn From="144" Yes="145" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="145" Yes="146" dirYesFrom="down" dirYesTo="up" No="141" dirNoFrom="right" dirNoTo="down" />
+    <FlowConn From="145" Yes="146" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="146" Yes="147" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="147" Yes="148" dirYesFrom="down" dirYesTo="up" />
     <FlowConn From="148" Yes="149" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="149" Yes="151" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="150" Yes="141" dirYesFrom="right" dirYesTo="down" No="152" dirNoFrom="down" dirNoTo="up" />
-    <FlowConn From="151" Yes="150" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="152" Yes="153" dirYesFrom="down" dirYesTo="up" />
-    <FlowConn From="153" Yes="141" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="149" Yes="153" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="150" Yes="120" dirYesFrom="down" dirYesTo="up" No="151" dirNoFrom="left" dirNoTo="left" />
+    <FlowConn From="151" Yes="150" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="152" Yes="139" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="153" Yes="139" dirYesFrom="right" dirYesTo="down" No="152" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="154" Yes="136" dirYesFrom="right" dirYesTo="left" No="156" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="155" Yes="87" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="156" Yes="156" dirYesFrom="right" dirYesTo="up" No="156" dirNoFrom="left" dirNoTo="up" />
+    <FlowConn From="157" Yes="158" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="158" Yes="39" dirYesFrom="down" dirYesTo="up" />
   </FlowConnections>
   <Wires />
   <Comments />
