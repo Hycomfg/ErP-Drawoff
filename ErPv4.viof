@@ -325,7 +325,7 @@
       <eAddress1 sAddress="ThermostatOff" sIndex="" dtAddress="UI16" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
-    <TimerCompare rung="0" row="543" column="8" cellsHeigh="-1" iSortedIndex="70" timerCompareType="GreaterOrEqual" timeUnit="sec">
+    <TimerCompare rung="0" row="543" column="8" cellsHeigh="-1" iSortedIndex="70" timerCompareType="GreaterOrEqual" timeUnit="hr">
       <eKeyTimerValue sAddress="Step3TMR" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="12" sIndex="" dtAddress="UI8" />
     </TimerCompare>
@@ -398,7 +398,7 @@
     </coilCopy>
     <LessEqual rung="0" row="514" column="8" cellsHeigh="-1" iSortedIndex="65">
       <eAddress1 sAddress="StageVolume" sIndex="" dtAddress="Float" />
-      <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="60" sIndex="" dtAddress="UI8" />
     </LessEqual>
     <wireRouter rung="0" row="515" column="23" cellsHeigh="-1" iSortedIndex="-1" />
     <coilTimer rung="0" row="277" column="2" cellsHeigh="3" iSortedIndex="12" myType="Timer" myTimerCommand="Start">
