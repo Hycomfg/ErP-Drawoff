@@ -240,7 +240,7 @@
       </Equation>
     </coilCalc>
     <coilCopy rung="0" row="321" column="2" cellsHeigh="5" iSortedIndex="23" CopyType="standard">
-      <eKeySource sAddress="2" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="60" sIndex="" dtAddress="Float" />
@@ -329,7 +329,7 @@
       <eKeyTimerValue sAddress="Step3TMR" sIndex="" dtAddress="I32" />
       <eKeyDuration sAddress="12" sIndex="" dtAddress="UI8" />
     </TimerCompare>
-    <coilCopy rung="0" row="553" column="8" cellsHeigh="5" iSortedIndex="72" CopyType="standard">
+    <coilCopy rung="0" row="553" column="8" cellsHeigh="7" iSortedIndex="72" CopyType="standard">
       <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
       <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
@@ -338,6 +338,10 @@
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
       <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Step4TMR" sIndex="" dtAddress="I32" />
       <eKeyDestination sAddress="ThermostatOff" sIndex="" dtAddress="UI16" />
@@ -346,6 +350,10 @@
       <eKeyDestination sAddress="StageVolume" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="SubStep" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="Qtestelec" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="Day" sIndex="" dtAddress="UI8" />
+      <eKeyDestination sAddress="Hour" sIndex="" dtAddress="UI8" />
+      <eKeyDestination sAddress="Minute" sIndex="" dtAddress="UI8" />
+      <eKeyDestination sAddress="Second" sIndex="" dtAddress="UI8" />
     </coilCopy>
     <coilTimer rung="0" row="303" column="3" cellsHeigh="3" iSortedIndex="18" myType="Timer" myTimerCommand="Start">
       <eKeyTimer sAddress="Seconds" sIndex="" dtAddress="I32" />
@@ -441,10 +449,10 @@
       <eKeyDestination sAddress="QH2OTap" sIndex="" dtAddress="Float" />
     </coilCopy>
     <coilCopy rung="0" row="327" column="2" cellsHeigh="3" iSortedIndex="24" CopyType="standard">
-      <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
       <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
-      <eKeyDestination sAddress="Step" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="x" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="SubStep" sIndex="" dtAddress="UI16" />
       <eKeyDestination sAddress="ColdPulses" sIndex="" dtAddress="I32" />
     </coilCopy>
@@ -518,10 +526,10 @@
     </coilCopy>
     <coilCopy rung="0" row="293" column="2" cellsHeigh="5" iSortedIndex="16" CopyType="standard">
       <eKeySource sAddress="1" sIndex="" dtAddress="UI8" />
-      <eKeySource sAddress="6" sIndex="" dtAddress="UI8" />
-      <eKeySource sAddress="59" sIndex="" dtAddress="UI8" />
-      <eKeySource sAddress="58" sIndex="" dtAddress="UI8" />
-      <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI8" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Float" />
       <eKeyDestination sAddress="Day" sIndex="" dtAddress="UI8" />
       <eKeyDestination sAddress="Hour" sIndex="" dtAddress="UI8" />
