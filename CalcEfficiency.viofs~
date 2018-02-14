@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<!--Velocio Builder 1.1-->
+<!--www.Velocio.net-->
+<VelocioNetworks IPAddress="">
+  <Setup ProjectType="FlowChart" />
+  <Connections>
+    <Connection sKey="Smart" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="SCF" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="CC" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="QElec" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="QCorr" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="Profile" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="k" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="Qcor" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="SmartTerm" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="QRef" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="EtaWH" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+  </Connections>
+  <Modbus />
+  <SubroutineInputs cellsHeigh="3">
+    <Input sAddress="Smart" sIndex="" dtAddress="Bit" />
+    <Input sAddress="SCF" sIndex="" dtAddress="Float" />
+    <Input sAddress="CC" sIndex="" dtAddress="Float" />
+    <Input sAddress="QElec" sIndex="" dtAddress="Float" />
+    <Input sAddress="Profile" sIndex="" dtAddress="UI16" />
+    <Input sAddress="QRef" sIndex="" dtAddress="Float" />
+    <Input sAddress="EtaWH" sIndex="" dtAddress="Float" />
+  </SubroutineInputs>
+  <Cells>
+    <start rung="0" row="1" column="1" cellsHeigh="-1" iSortedIndex="-1" />
+    <Less rung="0" row="6" column="2" cellsHeigh="-1" iSortedIndex="0">
+      <eAddress1 sAddress="Profile" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="6" sIndex="" dtAddress="UI8" />
+    </Less>
+    <coilCopy rung="0" row="10" column="2" cellsHeigh="3" iSortedIndex="1" CopyType="standard">
+      <eKeySource sAddress=".23" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="k" sIndex="" dtAddress="Float" />
+    </coilCopy>
+    <coilCopy rung="0" row="10" column="8" cellsHeigh="3" iSortedIndex="6" CopyType="standard">
+      <eKeySource sAddress="0.0" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="k" sIndex="" dtAddress="Float" />
+    </coilCopy>
+    <coilCalc rung="0" row="14" column="2" cellsHeigh="3" iSortedIndex="2">
+      <eStoreIn sAddress="Qcor" sIndex="" dtAddress="Float" />
+      <Equation>
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="k" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="CC" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="QElec" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="Smart" sIndex="" dtAddress="Bit" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="SCF" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="QRef" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+      </Equation>
+    </coilCalc>
+    <coilReturn rung="0" row="29" column="4" cellsHeigh="-1" iSortedIndex="5" />
+    <coilCalc rung="0" row="23" column="2" cellsHeigh="3" iSortedIndex="4">
+      <eStoreIn sAddress="EtaWH" sIndex="" dtAddress="Float" />
+      <Equation>
+        <mathElement sAddress="QRef" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="CC" sIndex="" dtAddress="Float" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="QElec" sIndex="" dtAddress="Float" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="SCF" sIndex="" dtAddress="Float" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="QCorr" sIndex="" dtAddress="Bit" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+      </Equation>
+    </coilCalc>
+    <Greater rung="0" row="19" column="4" cellsHeigh="-1" iSortedIndex="3">
+      <eAddress1 sAddress="QElec" sIndex="" dtAddress="Float" />
+      <eAddress2 sAddress="0" sIndex="" dtAddress="UI8" />
+    </Greater>
+    <coilCopy rung="0" row="23" column="9" cellsHeigh="3" iSortedIndex="7" CopyType="standard">
+      <eKeySource sAddress="0.0" sIndex="" dtAddress="Float" />
+      <eKeyDestination sAddress="EtaWH" sIndex="" dtAddress="Float" />
+    </coilCopy>
+  </Cells>
+  <FlowConnections>
+    <FlowConn From="0" Yes="1" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="1" Yes="2" dirYesFrom="down" dirYesTo="up" No="3" dirNoFrom="right" dirNoTo="up" />
+    <FlowConn From="2" Yes="4" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="3" Yes="4" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="4" Yes="7" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="6" Yes="5" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="7" Yes="6" dirYesFrom="down" dirYesTo="up" No="8" dirNoFrom="right" dirNoTo="up" />
+    <FlowConn From="8" Yes="5" dirYesFrom="down" dirYesTo="up" />
+  </FlowConnections>
+  <Wires />
+  <Comments />
+</VelocioNetworks>
