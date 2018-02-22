@@ -42,7 +42,7 @@
     <Connection sKey="OutBitE4" iPort="4" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
     <Connection sKey="OutBitE5" iPort="4" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
     <Connection sKey="OutBitE6" iPort="4" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
-    <Connection sKey="DomeTemp" iPort="5" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="input" />
+    <Connection sKey="DomeTemp" iPort="5" iPin="1" myThermType="K" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="input" />
     <Connection sKey="Inlet" iPort="5" iPin="2" myThermType="K" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="input" />
     <Connection sKey="Outlet" iPort="5" iPin="3" myThermType="K" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="input" />
     <Connection sKey="CurrentV" iPort="5" iPin="4" myThermType="v6pt144" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="input" />

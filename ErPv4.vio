@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--Velocio.net-->
 <!--vBuilder Project 1.0-->
-<Tree Default="Flow Chart" iProgramCheckSum="1057625">
+<Tree Default="Flow Chart" iProgramCheckSum="0">
   <leaf index="0" CANDataRate="rate1MBaud" Type="Ace 3090" bEEPROM_CPU="True" sESub="ErPv4.viof">
     <serialData alPortsIndex="1" mySerialType="modbus" sSubPort="A2" myBaudRate="rate9600" myParity="None" bRS232or485="False" myRSType="RS232" iStopBits="1" sReceiveDataTagKey="" sSendDataTagKey="" />
     <setupThermData alPortsIndex="6" sSignal="F1" iPinNumber="1" byPortNum="5" myThermType="K" />

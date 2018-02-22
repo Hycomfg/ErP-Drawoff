@@ -15,6 +15,24 @@
     <Connection sKey="QRefTestElec" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="TotkWh" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
     <Connection sKey="TotkWhP" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="VE_TempI32_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
   </Connections>
   <Modbus />
   <SubroutineInputs cellsHeigh="4">
@@ -53,8 +71,8 @@
     <coilCalc rung="0" row="25" column="6" cellsHeigh="3" iSortedIndex="10">
       <eStoreIn sAddress="QTestElec" sIndex="" dtAddress="Float" />
       <Equation>
-        <mathElement sAddress="QRefTestElecP" sIndex="" dtAddress="I32" />
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="QTestElecP" sIndex="" dtAddress="I32" />
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
         <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
@@ -80,10 +98,10 @@
       <eAddress1 sAddress="Week" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
     </Equal>
-    <NotEqual rung="0" row="49" column="15" cellsHeigh="-1" iSortedIndex="11">
+    <Equal rung="0" row="49" column="15" cellsHeigh="-1" iSortedIndex="11">
       <eAddress1 sAddress="Week" sIndex="" dtAddress="UI8" />
       <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
-    </NotEqual>
+    </Equal>
     <coilCalc rung="0" row="56" column="5" cellsHeigh="3" iSortedIndex="8">
       <eStoreIn sAddress="QRefTestElec" sIndex="" dtAddress="Float" />
       <Equation>
