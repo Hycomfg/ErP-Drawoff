@@ -364,7 +364,7 @@
     </coilCounter>
     <coilCopy rung="0" row="5" column="2" cellsHeigh="5" iSortedIndex="0" CopyType="standard">
       <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
-      <eKeySource sAddress="20" sIndex="" dtAddress="Float" />
+      <eKeySource sAddress="21" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="40" sIndex="" dtAddress="Float" />
       <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
       <eKeyDestination sAddress="Profile" sIndex="" dtAddress="UI16" />
