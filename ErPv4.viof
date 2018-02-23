@@ -236,9 +236,9 @@
         <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
         <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
         <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="20" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="20.0" sIndex="" dtAddress="Float" />
         <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
-        <mathElement sAddress="5" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="5.0" sIndex="" dtAddress="Float" />
         <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
       </Equation>
     </coilCalc>
