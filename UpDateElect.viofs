@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!--Velocio Builder 1.1-->
+<!--www.Velocio.net-->
+<VelocioNetworks IPAddress="">
+  <Setup ProjectType="FlowChart" />
+  <Connections>
+    <Connection sKey="Step" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="Smart" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="Week" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI8" dataSource="register" />
+    <Connection sKey="QTestElecP" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="QSmartTestElecP" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="QRefTestElecP" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="QTestElec" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="QSmartTestElec" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="QRefTestElec" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="TotkWh" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="register" />
+    <Connection sKey="TotkWhP" bPassedByRef="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="VE_TempI32_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+    <Connection sKey="VE_TempI32_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="temporary" />
+    <Connection sKey="VE_TempFloat_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Float" dataSource="temporary" />
+    <Connection sKey="VE_TempUI16_5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="temporary" />
+  </Connections>
+  <Modbus />
+  <SubroutineInputs cellsHeigh="4">
+    <Input sAddress="Step" sIndex="" dtAddress="UI16" />
+    <Input sAddress="Smart" sIndex="" dtAddress="Bit" />
+    <Input sAddress="Week" sIndex="" dtAddress="UI8" />
+    <Input sAddress="QTestElecP" sIndex="" dtAddress="I32" />
+    <Input sAddress="QSmartTestElecP" sIndex="" dtAddress="I32" />
+    <Input sAddress="QRefTestElecP" sIndex="" dtAddress="I32" />
+    <Input sAddress="QTestElec" sIndex="" dtAddress="Float" />
+    <Input sAddress="QSmartTestElec" sIndex="" dtAddress="Float" />
+    <Input sAddress="QRefTestElec" sIndex="" dtAddress="Float" />
+    <Input sAddress="TotkWh" sIndex="" dtAddress="Float" />
+    <Input sAddress="TotkWhP" sIndex="" dtAddress="I32" />
+  </SubroutineInputs>
+  <Cells>
+    <coilCalc rung="0" row="7" column="2" cellsHeigh="3" iSortedIndex="0">
+      <eStoreIn sAddress="TotkWh" sIndex="" dtAddress="Float" />
+      <Equation>
+        <mathElement sAddress="TotkWhP" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
+      </Equation>
+    </coilCalc>
+    <start rung="0" row="2" column="1" cellsHeigh="-1" iSortedIndex="-1" />
+    <NO rung="0" row="13" column="3" cellsHeigh="-1" iSortedIndex="1">
+      <eAddress1 sAddress="Smart" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NotEqual rung="0" row="21" column="8" cellsHeigh="-1" iSortedIndex="5">
+      <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="4" sIndex="" dtAddress="UI8" />
+    </NotEqual>
+    <coilCalc rung="0" row="25" column="6" cellsHeigh="3" iSortedIndex="10">
+      <eStoreIn sAddress="QTestElec" sIndex="" dtAddress="Float" />
+      <Equation>
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="QTestElecP" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
+      </Equation>
+    </coilCalc>
+    <coilCopy rung="0" row="25" column="14" cellsHeigh="3" iSortedIndex="6" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="QTestElecP" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <NotEqual rung="0" row="42" column="7" cellsHeigh="-1" iSortedIndex="2">
+      <eAddress1 sAddress="Step" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="4" sIndex="" dtAddress="UI8" />
+    </NotEqual>
+    <coilCopy rung="0" row="42" column="11" cellsHeigh="3" iSortedIndex="3" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="QRefTestElecP" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="QSmartTestElecP" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <wireRouter rung="0" row="42" column="4" cellsHeigh="-1" iSortedIndex="-1" />
+    <Equal rung="0" row="49" column="7" cellsHeigh="-1" iSortedIndex="7">
+      <eAddress1 sAddress="Week" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <Equal rung="0" row="49" column="15" cellsHeigh="-1" iSortedIndex="11">
+      <eAddress1 sAddress="Week" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <coilCalc rung="0" row="56" column="5" cellsHeigh="3" iSortedIndex="8">
+      <eStoreIn sAddress="QRefTestElec" sIndex="" dtAddress="Float" />
+      <Equation>
+        <mathElement sAddress="QRefTestElecP" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
+      </Equation>
+    </coilCalc>
+    <coilCalc rung="0" row="56" column="13" cellsHeigh="3" iSortedIndex="12">
+      <eStoreIn sAddress="QSmartTestElec" sIndex="" dtAddress="Float" />
+      <Equation>
+        <mathElement sAddress="QSmartTestElecP" sIndex="" dtAddress="I32" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000.0" sIndex="" dtAddress="Float" />
+      </Equation>
+    </coilCalc>
+    <coilCopy rung="0" row="60" column="5" cellsHeigh="3" iSortedIndex="9" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="QSmartTestElecP" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <coilCopy rung="0" row="60" column="14" cellsHeigh="3" iSortedIndex="13" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="QRefTestElecP" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <coilReturn rung="0" row="63" column="21" cellsHeigh="-1" iSortedIndex="4" />
+  </Cells>
+  <FlowConnections>
+    <FlowConn From="0" Yes="2" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="1" Yes="0" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="2" Yes="8" dirYesFrom="down" dirYesTo="up" No="3" dirNoFrom="right" dirNoTo="up" />
+    <FlowConn From="3" Yes="5" dirYesFrom="right" dirYesTo="up" No="4" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="4" Yes="15" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="5" Yes="15" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="6" Yes="7" dirYesFrom="right" dirYesTo="left" No="9" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="7" Yes="15" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="8" Yes="6" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="9" Yes="11" dirYesFrom="down" dirYesTo="up" No="10" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="10" Yes="12" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="11" Yes="13" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="12" Yes="14" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="13" Yes="15" dirYesFrom="down" dirYesTo="left" />
+    <FlowConn From="14" Yes="15" dirYesFrom="down" dirYesTo="left" />
+  </FlowConnections>
+  <Wires />
+  <Comments />
+</VelocioNetworks>

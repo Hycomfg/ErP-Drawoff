@@ -444,22 +444,22 @@
       <connectionProgramDetails Key="TotkWhP" TagNumber="383" index="7" mask="65535" />
       <connectionProgramDetails Key="VE_TempI32_0" TagNumber="384" index="0" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="385" index="0" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="386" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="386" index="65535" mask="65535" />
       <connectionProgramDetails Key="VE_TempI32_1" TagNumber="387" index="1" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="388" index="1" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="389" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="389" index="65535" mask="65535" />
       <connectionProgramDetails Key="VE_TempI32_2" TagNumber="390" index="2" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="391" index="2" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="392" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="392" index="65535" mask="65535" />
       <connectionProgramDetails Key="VE_TempI32_3" TagNumber="393" index="3" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="394" index="3" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="395" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="395" index="65535" mask="65535" />
       <connectionProgramDetails Key="VE_TempI32_4" TagNumber="396" index="4" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="397" index="4" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="398" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="398" index="65535" mask="65535" />
       <connectionProgramDetails Key="VE_TempI32_5" TagNumber="399" index="5" mask="65535" />
       <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="400" index="5" mask="65535" />
-      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="401" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="401" index="65535" mask="65535" />
     </SWTK>
   </leaf>
 </Tree>
